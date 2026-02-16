@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Otai Media</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/otai-logo2.png">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+            <img src="assets/otai-logo.png" alt="OTAI Media Logo">
+        </a>
+        <ul class="nav-menu">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="#websites" class="active">Portfolio</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="assets/Noel's.%20CV.pdf" download class="btn-download">Download CV</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+<!-- Portfolio Hero -->
+<section class="portfolio-hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">Our <span class="gradient-text">Portfolio</span></h1>
+            <p class="hero-subtitle">Immersive digital experiences across three dimensions</p>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="stat-number" data-count="32">0</span>
+                    <span class="stat-label">Websites Built</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="stat-number" data-count="28">0</span>
+                    <span class="stat-label">UI/UX Designs</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="stat-number" data-count="19">0</span>
+                    <span class="stat-label">AI Projects</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+</section>
+
+<!-- Portfolio Navigation -->
+<div class="portfolio-nav">
+    <div class="container">
+        <div class="portfolio-nav-inner">
+            <a href="#websites" class="portfolio-nav-item active" data-section="websites">
+                <i class="fas fa-laptop-code"></i>
+                <span>Web Development</span>
+            </a>
+            <a href="#designs" class="portfolio-nav-item" data-section="designs">
+                <i class="fas fa-paint-brush"></i>
+                <span>UI/UX Designs</span>
+            </a>
+            <a href="#ai" class="portfolio-nav-item" data-section="ai">
+                <i class="fas fa-brain"></i>
+                <span>AI & Innovations</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Websites Section - WITH FLIP CARDS (2 per row) -->
+<section id="websites" class="portfolio-section websites-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">
+                <span class="title-icon"><i class="fas fa-laptop-code"></i></span>
+                Web Development Excellence
+            </h2>
+            <p class="section-subtitle">Responsive, performant websites that convert visitors into customers</p>
+        </div>
+
+        <div class="devices-showcase">
+            <!-- Flip Card 1 -->
+            <div class="device-flip-card">
+                <div class="flip-card-container">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="device-frame desktop">
+                                <div class="desktop-screen">
+                                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&crop=faces&fit=crop&w=375&h=812&q=80" alt="Luxe Real Estate Website">
+                                </div>
+                                <div class="desktop-frame"></div>
+                                <div class="desktop-info">
+                                    <h4>Luxe Real Estate</h4>
+                                    <p>Desktop View</p>
+                                    <div class="tech-badges">
+                                        <span>React</span>
+                                        <span>TypeScript</span>
+                                        <span>Node.js</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="device-frame mobile">
+                                <div class="mobile-screen">
+                                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Luxe Real Estate Mobile">
+                                </div>
+                                <div class="mobile-frame"></div>
+                                <div class="mobile-info">
+                                    <h4>Luxe Real Estate</h4>
+                                    <p>Mobile View</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <h3>Luxe Real Estate Platform</h3>
+                    <p>High-end property showcase with virtual tours, AI-powered recommendations, and instant booking system.</p>
+                    <div class="project-stats">
+                        <div class="stat">
+                            <i class="fas fa-bolt"></i>
+                            <span>0.8s Load Time</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>100% Mobile Score</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-chart-line"></i>
+                            <span>45% Conversion</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flip Card 2 -->
+            <div class="device-flip-card">
+                <div class="flip-card-container">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="device-frame desktop">
+                                <div class="desktop-screen">
+                                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="EcoStore Dashboard">
+                                </div>
+                                <div class="desktop-frame"></div>
+                                <div class="desktop-info">
+                                    <h4>EcoStore Dashboard</h4>
+                                    <p>Desktop View</p>
+                                    <div class="tech-badges">
+                                        <span>Vue.js</span>
+                                        <span>Firebase</span>
+                                        <span>Chart.js</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="device-frame mobile">
+                                <div class="mobile-screen">
+                                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="EcoStore Mobile">
+                                </div>
+                                <div class="mobile-frame"></div>
+                                <div class="mobile-info">
+                                    <h4>EcoStore Dashboard</h4>
+                                    <p>Mobile View</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <h3>EcoStore Sustainable Shopping</h3>
+                    <p>E-commerce platform with carbon footprint tracking, sustainable product recommendations, and green delivery options.</p>
+                    <div class="project-stats">
+                        <div class="stat">
+                            <i class="fas fa-leaf"></i>
+                            <span>Carbon Neutral</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>3000+ Products</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-users"></i>
+                            <span>50k+ Users</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flip Card 3 -->
+            <div class="device-flip-card">
+                <div class="flip-card-container">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="device-frame desktop">
+                                <div class="desktop-screen">
+                                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="HealthTech Platform">
+                                </div>
+                                <div class="desktop-frame"></div>
+                                <div class="desktop-info">
+                                    <h4>HealthTech Platform</h4>
+                                    <p>Desktop View</p>
+                                    <div class="tech-badges">
+                                        <span>Angular</span>
+                                        <span>WebSocket</span>
+                                        <span>GraphQL</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="device-frame mobile">
+                                <div class="mobile-screen">
+                                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&crop=faces&fit=crop&w=375&h=812&q=80" alt="HealthTech Mobile">
+                                </div>
+                                <div class="mobile-frame"></div>
+                                <div class="mobile-info">
+                                    <h4>HealthTech Platform</h4>
+                                    <p>Mobile View</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <h3>MedConnect Health Platform</h3>
+                    <p>Telemedicine platform with real-time doctor consultations, AI symptom checker, and digital prescriptions.</p>
+                    <div class="project-stats">
+                        <div class="stat">
+                            <i class="fas fa-heartbeat"></i>
+                            <span>24/7 Support</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-stethoscope"></i>
+                            <span>500+ Doctors</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>HIPAA Certified</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flip Card 4 (New) -->
+            <div class="device-flip-card">
+                <div class="flip-card-container">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="device-frame desktop">
+                                <div class="desktop-screen">
+                                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="FinTech Dashboard">
+                                </div>
+                                <div class="desktop-frame"></div>
+                                <div class="desktop-info">
+                                    <h4>FinTech Dashboard</h4>
+                                    <p>Desktop View</p>
+                                    <div class="tech-badges">
+                                        <span>Next.js</span>
+                                        <span>Python</span>
+                                        <span>D3.js</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="device-frame mobile">
+                                <div class="mobile-screen">
+                                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="FinTech Mobile">
+                                </div>
+                                <div class="mobile-frame"></div>
+                                <div class="mobile-info">
+                                    <h4>FinTech Dashboard</h4>
+                                    <p>Mobile View</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <h3>WealthTrack Financial Platform</h3>
+                    <p>Advanced financial dashboard with real-time market data, investment tracking, and AI-driven portfolio recommendations.</p>
+                    <div class="project-stats">
+                        <div class="stat">
+                            <i class="fas fa-chart-pie"></i>
+                            <span>Real-time Data</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-lock"></i>
+                            <span>Bank-level Security</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-robot"></i>
+                            <span>AI Insights</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- UI/UX Designs Section -->
+<section id="designs" class="portfolio-section designs-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title" style="color: purple;">
+                <span class="title-icon"><i class="fas fa-paint-brush"></i></span>
+                UI/UX Design Systems
+            </h2>
+            <p class="section-subtitle">Pixel-perfect designs with user-centered approach and detailed specifications</p>
+        </div>
+
+        <div class="design-grid">
+            <!-- Design 1 -->
+            <div class="design-system-card">
+                <div class="design-preview">
+                    <div class="dimension-label">
+                        <span class="dimension">1920 × 1080</span>
+                        <span class="device">Desktop</span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Banking Dashboard Design" class="design-image">
+                    <div class="design-overlay">
+                        <div class="color-palette">
+                            <div class="color" style="background: #1a237e;"></div>
+                            <div class="color" style="background: #283593;"></div>
+                            <div class="color" style="background: #3949ab;"></div>
+                            <div class="color" style="background: #5c6bc0;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="design-specs">
+                    <h3>Dashboard</h3>
+                    <div class="spec-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Typography</span>
+                            <span class="spec-value">Inter, 14-24px</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Spacing</span>
+                            <span class="spec-value">8px Grid System</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Components</span>
+                            <span class="spec-value">45+</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Figma Frames</span>
+                            <span class="spec-value">128</span>
+                        </div>
+                    </div>
+                    <div class="design-tools">
+                        <span class="tool-tag">Figma</span>
+                        <span class="tool-tag">After Effects</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Design 2 -->
+            <div class="design-system-card">
+                <div class="design-preview">
+                    <div class="dimension-label">
+                        <span class="dimension">375 × 812</span>
+                        <span class="device">iPhone 13</span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Fitness App Design" class="design-image">
+                    <div class="design-overlay">
+                        <div class="color-palette">
+                            <div class="color" style="background: #ff3d00;"></div>
+                            <div class="color" style="background: #ff6e40;"></div>
+                            <div class="color" style="background: #ff9e80;"></div>
+                            <div class="color" style="background: #ffffff;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="design-specs">
+                    <h3>Mobile App</h3>
+                    <div class="spec-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Typography</span>
+                            <span class="spec-value">SF Pro, 12-20px</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Spacing</span>
+                            <span class="spec-value">4px Baseline</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Screens</span>
+                            <span class="spec-value">42</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Animations</span>
+                            <span class="spec-value">18</span>
+                        </div>
+                    </div>
+                    <div class="design-tools">
+                        <span class="tool-tag">Sketch</span>
+                        <span class="tool-tag">Lottie</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Design 3 -->
+            <div class="design-system-card">
+                <div class="design-preview">
+                    <div class="dimension-label">
+                        <span class="dimension">1440 × 1024</span>
+                        <span class="device">Tablet Dashboard</span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Analytics Dashboard" class="design-image">
+                    <div class="design-overlay">
+                        <div class="color-palette">
+                            <div class="color" style="background: #00695c;"></div>
+                            <div class="color" style="background: #00897b;"></div>
+                            <div class="color" style="background: #4db6ac;"></div>
+                            <div class="color" style="background: #b2dfdb;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="design-specs">
+                    <h3>Data Analytics</h3>
+                    <div class="spec-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Typography</span>
+                            <span class="spec-value">Roboto, 13-22px</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Spacing</span>
+                            <span class="spec-value">12px Grid</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Charts</span>
+                            <span class="spec-value">15 Types</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Data States</span>
+                            <span class="spec-value">Loading/Error/Empty</span>
+                        </div>
+                    </div>
+                    <div class="design-tools">
+                        <span class="tool-tag">Adobe XD</span>
+                        <span class="tool-tag">Chart.js</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- AI & Innovations Section -->
+<section id="ai" class="portfolio-section ai-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">
+                <span class="title-icon"><i class="fas fa-brain"></i></span>
+                AI & Innovation at Otai Media
+            </h2>
+            <p class="section-subtitle">Integrating artificial intelligence to create smarter, more efficient digital solutions</p>
+        </div>
+
+        <div class="ai-innovation-showcase">
+            <!-- AI Project 1 -->
+            <div class="ai-project-card">
+                <div class="ai-project-header">
+                    <div class="ai-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="ai-project-badge">
+                        <span class="badge-text">PRODUCTION</span>
+                    </div>
+                </div>
+                <h3>Smart Content Generator</h3>
+                <p class="ai-project-desc">AI-powered content creation system that generates SEO-optimized articles, product descriptions, and marketing copy for Otai Media clients.</p>
+
+                <div class="ai-metrics">
+                    <div class="metric">
+                        <span class="metric-value">70%</span>
+                        <span class="metric-label">Time Saved</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-value">24/7</span>
+                        <span class="metric-label">Operation</span>
+                    </div>
+                </div>
+
+                <div class="ai-use-case">
+                    <h4>Otai Media Application:</h4>
+                    <p>Automated blog content generation for client websites, reducing content creation time from days to hours.</p>
+                </div>
+            </div>
+
+            <!-- AI Project 2 -->
+            <div class="ai-project-card">
+                <div class="ai-project-header">
+                    <div class="ai-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="ai-project-badge">
+                        <span class="badge-text">RESEARCH</span>
+                    </div>
+                </div>
+                <h3>Predictive Analytics Engine</h3>
+                <p class="ai-project-desc">Machine learning models that analyze user behavior to predict conversion patterns and optimize website layouts in real-time.</p>
+
+                <div class="ai-metrics">
+                    <div class="metric">
+                        <span class="metric-value">87%</span>
+                        <span class="metric-label">Accuracy</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-value">Real-time</span>
+                        <span class="metric-label">Optimization</span>
+                    </div>
+                </div>
+
+                <div class="ai-use-case">
+                    <h4>Otai Media Application:</h4>
+                    <p>Dynamic A/B testing for client websites, automatically adjusting layouts based on user engagement predictions.</p>
+                </div>
+            </div>
+
+            <!-- AI Project 3 -->
+            <div class="ai-project-card">
+                <div class="ai-project-header">
+                    <div class="ai-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <div class="ai-project-badge">
+                        <span class="badge-text">DEVELOPMENT</span>
+                    </div>
+                </div>
+                <h3>Visual Design Assistant</h3>
+                <p class="ai-project-desc">Computer vision system that analyzes design patterns and suggests improvements based on current UI/UX trends and client brand guidelines.</p>
+
+                <div class="ai-metrics">
+                    <div class="metric">
+                        <span class="metric-value">10x</span>
+                        <span class="metric-label">Design Speed</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-value">98%</span>
+                        <span class="metric-label">Brand Compliance</span>
+                    </div>
+                </div>
+
+                <div class="ai-use-case">
+                    <h4>Otai Media Application:</h4>
+                    <p>Automated design consistency checking and accessibility compliance for all client projects.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ai-future-roadmap">
+            <h3>AI Innovation Roadmap for Otai Media</h3>
+            <div class="roadmap-timeline">
+                <div class="roadmap-phase">
+                    <div class="phase-icon">Q1</div>
+                    <h4>AI-Powered Chatbots</h4>
+                    <p>Client website integration with context-aware assistance</p>
+                </div>
+                <div class="roadmap-phase">
+                    <div class="phase-icon">Q2</div>
+                    <h4>Code Generation AI</h4>
+                    <p>Automated component development from design files</p>
+                </div>
+                <div class="roadmap-phase">
+                    <div class="phase-icon">Q3</div>
+                    <h4>Predictive Maintenance</h4>
+                    <p>AI monitoring of client website performance</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Animated background elements -->
+    <div class="ai-background-elements">
+        <div class="neural-node"></div>
+        <div class="neural-node"></div>
+        <div class="neural-node"></div>
+        <div class="data-stream"></div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="portfolio-cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Ready to Transform Your Digital Presence?</h2>
+            <p>Let's create something amazing together. From stunning websites to intelligent AI solutions.</p>
+            <div class="cta-buttons">
+                <a href="index.html#contact" class="btn-primary">Start a Project</a>
+                <a href="index.html#about" class="btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Back to Top -->
+<button class="back-to-top" id="backToTop">
+    <i class="fas fa-chevron-up"></i>
+</button>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/otai-logo.png" alt="OTAI Media">
+                <p>WEBSOLUTIONS TAILORED FOR YOU.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html#home">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="#websites">Portfolio</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+            <p class="copyright">&copy; 2024 Otai Media. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="portfolio.js"></script>
+</body>
+</html>

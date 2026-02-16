@@ -11,6 +11,7 @@
     --text-color: #ffffff;
     --accent-color: #8a2be2;
     --accent-gradient: linear-gradient(135deg, #8a2be2, #4a00e0);
+     --gradient-purple: linear-gradient(135deg, var(--primary-purple), var(--neon-purple));
     --card-bg: rgba(255, 255, 255, 0.05);
     --border-color: rgba(255, 255, 255, 0.1);
 }
@@ -1349,3 +1350,277 @@ body {
     }
 }
 
+/* Add to existing style.css */
+.about-explore {
+  grid-column: 1 / -1;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.explore-card {
+  background: var(--gradient-purple);
+  padding: 30px 40px;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(138, 43, 226, 0.3);
+  animation: pulseGlow 2s infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 10px 30px rgba(138, 43, 226, 0.3);
+  }
+  50% {
+    box-shadow: 0 10px 40px rgba(138, 43, 226, 0.5);
+  }
+}
+
+.explore-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.explore-card p {
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.btn-explore {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--gradient-purple);
+  color: var(--primary-purple);
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-explore:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Purple Gradient Footer */
+.footer {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 60px 0 30px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Optional: Add animated gradient overlay */
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
+    pointer-events: none;
+}
+
+/* Optional: Add floating particles effect */
+.footer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(255,255,255,0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-logo {
+    margin-bottom: 10px;
+}
+
+.footer-logo img {
+    max-height: 100px;
+    filter: brightness(0) invert(1); /* Makes logo white */
+}
+
+.footer-logo p {
+    margin-top: 5px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Footer Links - Updated for purple background */
+.footer-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    padding: 5px 0;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255,255,255,0.5);
+}
+
+/* Underline animation - White for purple background */
+.footer-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(255,255,255,0.5);
+    transition: width 0.3s ease;
+}
+
+.footer-links a:hover::after {
+    width: 100%;
+}
+
+/* Icons before links */
+.footer-links a::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 8px;
+    font-size: 14px;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.footer-links a[href*="home"]::before {
+    content: "\f015"; /* home icon */
+}
+
+.footer-links a[href*="about"]::before {
+    content: "\f007"; /* user icon */
+}
+
+.footer-links a[href*="Portfolio"]::before,
+.footer-links a[href*="websites"]::before {
+    content: "\f0a1"; /* briefcase icon */
+}
+
+.footer-links a[href*="contact"]::before {
+    content: "\f0e0"; /* envelope icon */
+}
+
+.footer-links a:hover::before {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+/* Copyright text */
+.copyright {
+    margin-top: 30px;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+/* Alternative Purple Gradients you can use */
+
+/* Gradient Option 2: Electric Purple */
+.footer.purple-electric {
+    background: linear-gradient(135deg, #8B5CF6 0%, #6366F1 50%, #3B82F6 100%);
+}
+
+/* Gradient Option 3: Deep Purple */
+.footer.purple-deep {
+    background: linear-gradient(135deg, #4C1D95 0%, #5B21B6 50%, #6D28D9 100%);
+}
+
+/* Gradient Option 4: Purple to Pink */
+.footer.purple-pink {
+    background: linear-gradient(135deg, #8B5CF6 0%, #D946EF 50%, #EC4899 100%);
+}
+
+/* Gradient Option 5: Royal Purple */
+.footer.purple-royal {
+    background: linear-gradient(135deg, #3730A3 0%, #5B21B6 50%, #7C3AED 100%);
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 40px 0 20px;
+    }
+
+    .footer-links {
+        gap: 15px;
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        margin: 20px auto;
+    }
+
+    .footer-links a {
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+        padding: 12px 20px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        backdrop-filter: blur(5px);
+    }
+
+    .footer-links a::after {
+        display: none;
+    }
+
+    .footer-links a:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: translateY(-2px);
+    }
+
+    .footer-links a::before {
+        margin-right: 10px;
+    }
+}
+
+/* Animation for footer on scroll */
+.footer {
+    animation: gradientShift 10s ease infinite;
+    background-size: 200% 200%;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
